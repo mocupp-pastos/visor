@@ -29,26 +29,26 @@ map <-
   addProviderTiles(providers$CartoDB.DarkMatter, group = "Mapa oscuro (CartoDB Dark Matter)") |>
   addProviderTiles(providers$Stamen.TonerLite, group = "Mapa claro (Stamen Toner Lite)") |>   
   addProviderTiles(providers$Esri.WorldImagery, group = "Imágenes satelitales (ESRI World Imagery)") |>
-  addWMSTiles(
-		"https://geoportal.ucr.ac.cr/geoserver/mocupp/wms",
-	  layers = "Paisaje_cobertura_arborea_2020",
-	  options = WMSTileOptions(
-	    format = "image/png",
-	    transparent = TRUE,
-	    crs = "EPSG:4326"
-	  ),
-	  group = "Cobertura arbórea 2020"
-  ) |>
-  addWMSTiles(
-		"https://geoportal.ucr.ac.cr/geoserver/mocupp/wms",
-	  layers = "Paisaje_cobertura_arborea_2021",
-	  options = WMSTileOptions(
-	    format = "image/png",
-	    transparent = TRUE,
-	    crs = "EPSG:4326"
-	  ),
-	  group = "Cobertura arbórea 2021"
-  ) |>
+#   addWMSTiles(
+# 		"https://geoportal.ucr.ac.cr/geoserver/mocupp/wms",
+# 	  layers = "Paisaje_cobertura_arborea_2020",
+# 	  options = WMSTileOptions(
+# 	    format = "image/png",
+# 	    transparent = TRUE,
+# 	    crs = "EPSG:4326"
+# 	  ),
+# 	  group = "Cobertura arbórea 2020"
+#   ) |>
+#   addWMSTiles(
+# 		"https://geoportal.ucr.ac.cr/geoserver/mocupp/wms",
+# 	  layers = "Paisaje_cobertura_arborea_2021",
+# 	  options = WMSTileOptions(
+# 	    format = "image/png",
+# 	    transparent = TRUE,
+# 	    crs = "EPSG:4326"
+# 	  ),
+# 	  group = "Cobertura arbórea 2021"
+#   ) |>
   addWMSTiles(
 		"https://geoportal.ucr.ac.cr/geoserver/mocupp/wms",
 	  layers = "Paisaje_cobertura_arborea_2022",
@@ -59,26 +59,26 @@ map <-
 	  ),
 	  group = "Cobertura arbórea 2022"
   ) |>
-  addWMSTiles(
-		"https://geoportal.ucr.ac.cr/geoserver/mocupp/wms",
-	  layers = "Paisaje_cobertura_pastos_2020",
-	  options = WMSTileOptions(
-	    format = "image/png",
-	    transparent = TRUE,
-	    crs = "EPSG:4326"
-	  ),
-	  group = "Cobertura de pastos 2020"
-  ) |>
-  addWMSTiles(
-		"https://geoportal.ucr.ac.cr/geoserver/mocupp/wms",
-	  layers = "Paisaje_cobertura_pastos_2021",
-	  options = WMSTileOptions(
-	    format = "image/png",
-	    transparent = TRUE,
-	    crs = "EPSG:4326"
-	  ),
-	  group = "Cobertura de pastos 2021"
-  ) |>
+#   addWMSTiles(
+# 		"https://geoportal.ucr.ac.cr/geoserver/mocupp/wms",
+# 	  layers = "Paisaje_cobertura_pastos_2020",
+# 	  options = WMSTileOptions(
+# 	    format = "image/png",
+# 	    transparent = TRUE,
+# 	    crs = "EPSG:4326"
+# 	  ),
+# 	  group = "Cobertura de pastos 2020"
+#   ) |>
+#   addWMSTiles(
+# 		"https://geoportal.ucr.ac.cr/geoserver/mocupp/wms",
+# 	  layers = "Paisaje_cobertura_pastos_2021",
+# 	  options = WMSTileOptions(
+# 	    format = "image/png",
+# 	    transparent = TRUE,
+# 	    crs = "EPSG:4326"
+# 	  ),
+# 	  group = "Cobertura de pastos 2021"
+#   ) |>
   addWMSTiles(
 		"https://geoportal.ucr.ac.cr/geoserver/mocupp/wms",
 	  layers = "Paisaje_cobertura_pastos_2022",
@@ -89,36 +89,36 @@ map <-
 	  ),
 	  group = "Cobertura de pastos 2022"
   ) |>
-  addWMSTiles(
-		"https://geoportal.ucr.ac.cr/geoserver/mocupp/wms",
-	  layers = "Perdida_ganancia_cobertura_arborea_sobre_paisaje_productivo_de_pastos_2019-2020_V1",
-	  options = WMSTileOptions(
-	    format = "image/png",
-	    transparent = TRUE,
-	    crs = "EPSG:4326"
-	  ),
-	  group = "Pérdida/ganancia árboles-pastos 2019-2020 V1"
-  ) |>
-  addWMSTiles(
-		"https://geoportal.ucr.ac.cr/geoserver/mocupp/wms",
-	  layers = "Perdida_ganancia_cobertura_arborea_sobre_paisaje_productivo_de_pastos_2019-2020_V2",
-	  options = WMSTileOptions(
-	    format = "image/png",
-	    transparent = TRUE,
-	    crs = "EPSG:4326"
-	  ),
-	  group = "Pérdida/ganancia árboles-pastos 2019-2020 V2"
-  ) |>
-  addWMSTiles(
-		"https://geoportal.ucr.ac.cr/geoserver/mocupp/wms",
-	  layers = "Perdida_ganancia_cobertura_arborea_sobre_paisaje_productivo_de_pastos_2020-2021",
-	  options = WMSTileOptions(
-	    format = "image/png",
-	    transparent = TRUE,
-	    crs = "EPSG:4326"
-	  ),
-	  group = "Pérdida/ganancia árboles-pastos 2020-2021"
-  ) |>
+#   addWMSTiles(
+# 		"https://geoportal.ucr.ac.cr/geoserver/mocupp/wms",
+# 	  layers = "Perdida_ganancia_cobertura_arborea_sobre_paisaje_productivo_de_pastos_2019-2020_V1",
+# 	  options = WMSTileOptions(
+# 	    format = "image/png",
+# 	    transparent = TRUE,
+# 	    crs = "EPSG:4326"
+# 	  ),
+# 	  group = "Pérdida/ganancia árboles-pastos 2019-2020 V1"
+#   ) |>
+#   addWMSTiles(
+# 		"https://geoportal.ucr.ac.cr/geoserver/mocupp/wms",
+# 	  layers = "Perdida_ganancia_cobertura_arborea_sobre_paisaje_productivo_de_pastos_2019-2020_V2",
+# 	  options = WMSTileOptions(
+# 	    format = "image/png",
+# 	    transparent = TRUE,
+# 	    crs = "EPSG:4326"
+# 	  ),
+# 	  group = "Pérdida/ganancia árboles-pastos 2019-2020 V2"
+#   ) |>
+#   addWMSTiles(
+# 		"https://geoportal.ucr.ac.cr/geoserver/mocupp/wms",
+# 	  layers = "Perdida_ganancia_cobertura_arborea_sobre_paisaje_productivo_de_pastos_2020-2021",
+# 	  options = WMSTileOptions(
+# 	    format = "image/png",
+# 	    transparent = TRUE,
+# 	    crs = "EPSG:4326"
+# 	  ),
+# 	  group = "Pérdida/ganancia árboles-pastos 2020-2021"
+#   ) |>
   addWMSTiles(
 		"https://geoportal.ucr.ac.cr/geoserver/mocupp/wms",
 	  layers = "Perdida_ganancia_cobertura_arborea_sobre_paisaje_productivo_de_pastos_2021-2022",
@@ -137,15 +137,15 @@ map <-
       "Imágenes satelitales (ESRI World Imagery)"
     ),
     overlayGroups = c(
-    	"Cobertura arbórea 2020",
-    	"Cobertura arbórea 2021",
+    	# "Cobertura arbórea 2020",
+    	# "Cobertura arbórea 2021", 
     	"Cobertura arbórea 2022",
-    	"Cobertura de pastos 2020",
-    	"Cobertura de pastos 2021",
+    	# "Cobertura de pastos 2020",
+    	# "Cobertura de pastos 2021",
     	"Cobertura de pastos 2022",
-    	"Pérdida/ganancia árboles-pastos 2019-2020 V1",
-    	"Pérdida/ganancia árboles-pastos 2019-2020 V2",
-    	"Pérdida/ganancia árboles-pastos 2020-2021",
+    	# "Pérdida/ganancia árboles-pastos 2019-2020 V1",
+    	# "Pérdida/ganancia árboles-pastos 2019-2020 V2",
+    	# "Pérdida/ganancia árboles-pastos 2020-2021",
     	"Pérdida/ganancia árboles-pastos 2021-2022"
     ),
     position = "topright",
@@ -156,14 +156,14 @@ map <-
   addMouseCoordinates() |>
   addSearchOSM() |>
   addResetMapButton() |>
-  addFullscreenControl() |>
-	hideGroup("Cobertura arbórea 2020") |>
-	hideGroup("Cobertura arbórea 2021") |>
-	hideGroup("Cobertura de pastos 2020") |>
-	hideGroup("Cobertura de pastos 2021") |>
-	hideGroup("Pérdida/ganancia árboles-pastos 2019-2020 V1") |>
-	hideGroup("Pérdida/ganancia árboles-pastos 2019-2020 V2") |>
-	hideGroup("Pérdida/ganancia árboles-pastos 2020-2021")
+  addFullscreenControl()
+	# hideGroup("Cobertura arbórea 2020") |>
+	# hideGroup("Cobertura arbórea 2021") |>
+	# hideGroup("Cobertura de pastos 2020") |>
+	# hideGroup("Cobertura de pastos 2021") |>
+	# hideGroup("Pérdida/ganancia árboles-pastos 2019-2020 V1") |>
+	# hideGroup("Pérdida/ganancia árboles-pastos 2019-2020 V2") |>
+	# hideGroup("Pérdida/ganancia árboles-pastos 2020-2021")
 
 map
 ```

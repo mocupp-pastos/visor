@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.1.189">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>MOCUPP Pastos</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="index_files/libs/clipboard/clipboard.min.js"></script>
+<script src="index_files/libs/quarto-html/quarto.js"></script>
+<script src="index_files/libs/quarto-html/popper.min.js"></script>
+<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="index_files/libs/quarto-html/anchor.min.js"></script>
+<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="index_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="index_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="index_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="index_files/libs/htmlwidgets-1.6.2/htmlwidgets.js"></script>
+<script src="index_files/libs/jquery-1.12.4/jquery.min.js"></script>
+<link href="index_files/libs/leaflet-1.3.1/leaflet.css" rel="stylesheet">
+<script src="index_files/libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="index_files/libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet">
+<script src="index_files/libs/proj4-2.6.2/proj4.min.js"></script>
+<script src="index_files/libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="index_files/libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet">
+<script src="index_files/libs/leaflet-binding-2.1.2/leaflet.js"></script>
+<script src="index_files/libs/leaflet-providers-1.9.0/leaflet-providers_1.9.0.js"></script>
+<script src="index_files/libs/leaflet-providers-plugin-2.1.2/leaflet-providers-plugin.js"></script>
+<script src="index_files/libs/clipboard-0.0.1/setClipboardText.js"></script>
+<script src="index_files/libs/fuse_js-3.2.0/fuse_js-prod.js"></script>
+<link href="index_files/libs/lfx-search-2.3.7/lfx-search-prod.css" rel="stylesheet">
+<script src="index_files/libs/lfx-search-2.3.7/lfx-search-prod.js"></script>
+<script src="index_files/libs/lfx-search-2.3.7/lfx-search-bindings.js"></script>
+<link href="index_files/libs/leaflet-easybutton-1.3.1/easy-button.css" rel="stylesheet">
+<script src="index_files/libs/leaflet-easybutton-1.3.1/easy-button.js"></script>
+<script src="index_files/libs/leaflet-easybutton-1.3.1/EasyButton-binding.js"></script>
+<link href="index_files/libs/ionicons-2.0.1/ionicons.min.css" rel="stylesheet">
+<link href="index_files/libs/lfx-fullscreen-1.0.2/lfx-fullscreen-prod.css" rel="stylesheet">
+<script src="index_files/libs/lfx-fullscreen-1.0.2/lfx-fullscreen-prod.js"></script>
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">MOCUPP Pastos</h1>
+<p class="subtitle lead">Actualización del paisaje productivo de pastos entre 2020 y 2022 en la región Brunca de Costa Rica</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    
+  </div>
+  
+
+</header>
+
+<div class="cell">
+
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div class="leaflet html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-88848f8aae0f0134121f" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-88848f8aae0f0134121f">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}},"fullscreenControl":{"position":"topleft","pseudoFullscreen":false}},"setView":[[8.75,-83.2],8,[]],"calls":[{"method":"addProviderTiles","args":["OpenStreetMap.Mapnik",null,"Mapa de calles (OpenStreetMap)",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addProviderTiles","args":["CartoDB.DarkMatter",null,"Mapa oscuro (CartoDB Dark Matter)",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addProviderTiles","args":["Stamen.TonerLite",null,"Mapa claro (Stamen Toner Lite)",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addProviderTiles","args":["Esri.WorldImagery",null,"Imágenes satelitales (ESRI World Imagery)",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addWMSTiles","args":["https://geoportal.ucr.ac.cr/geoserver/mocupp/wms",null,"Cobertura arbórea 2020",{"styles":"","format":"image/png","transparent":true,"version":"1.1.1","crs":"EPSG:4326","layers":"Paisaje_cobertura_arborea_2020"}]},{"method":"addWMSTiles","args":["https://geoportal.ucr.ac.cr/geoserver/mocupp/wms",null,"Cobertura arbórea 2021",{"styles":"","format":"image/png","transparent":true,"version":"1.1.1","crs":"EPSG:4326","layers":"Paisaje_cobertura_arborea_2021"}]},{"method":"addWMSTiles","args":["https://geoportal.ucr.ac.cr/geoserver/mocupp/wms",null,"Cobertura arbórea 2022",{"styles":"","format":"image/png","transparent":true,"version":"1.1.1","crs":"EPSG:4326","layers":"Paisaje_cobertura_arborea_2022"}]},{"method":"addWMSTiles","args":["https://geoportal.ucr.ac.cr/geoserver/mocupp/wms",null,"Cobertura de pastos 2020",{"styles":"","format":"image/png","transparent":true,"version":"1.1.1","crs":"EPSG:4326","layers":"Paisaje_cobertura_pastos_2020"}]},{"method":"addWMSTiles","args":["https://geoportal.ucr.ac.cr/geoserver/mocupp/wms",null,"Cobertura de pastos 2021",{"styles":"","format":"image/png","transparent":true,"version":"1.1.1","crs":"EPSG:4326","layers":"Paisaje_cobertura_pastos_2021"}]},{"method":"addWMSTiles","args":["https://geoportal.ucr.ac.cr/geoserver/mocupp/wms",null,"Cobertura de pastos 2022",{"styles":"","format":"image/png","transparent":true,"version":"1.1.1","crs":"EPSG:4326","layers":"Paisaje_cobertura_pastos_2022"}]},{"method":"addWMSTiles","args":["https://geoportal.ucr.ac.cr/geoserver/mocupp/wms",null,"Pérdida/ganancia árboles-pastos 2019-2020 V1",{"styles":"","format":"image/png","transparent":true,"version":"1.1.1","crs":"EPSG:4326","layers":"Perdida_ganancia_cobertura_arborea_sobre_paisaje_productivo_de_pastos_2019-2020_V1"}]},{"method":"addWMSTiles","args":["https://geoportal.ucr.ac.cr/geoserver/mocupp/wms",null,"Pérdida/ganancia árboles-pastos 2019-2020 V2",{"styles":"","format":"image/png","transparent":true,"version":"1.1.1","crs":"EPSG:4326","layers":"Perdida_ganancia_cobertura_arborea_sobre_paisaje_productivo_de_pastos_2019-2020_V2"}]},{"method":"addWMSTiles","args":["https://geoportal.ucr.ac.cr/geoserver/mocupp/wms",null,"Pérdida/ganancia árboles-pastos 2020-2021",{"styles":"","format":"image/png","transparent":true,"version":"1.1.1","crs":"EPSG:4326","layers":"Perdida_ganancia_cobertura_arborea_sobre_paisaje_productivo_de_pastos_2020-2021"}]},{"method":"addWMSTiles","args":["https://geoportal.ucr.ac.cr/geoserver/mocupp/wms",null,"Pérdida/ganancia árboles-pastos 2021-2022",{"styles":"","format":"image/png","transparent":true,"version":"1.1.1","crs":"EPSG:4326","layers":"Perdida_ganancia_cobertura_arborea_sobre_paisaje_productivo_de_pastos_2021-2022"}]},{"method":"addLayersControl","args":[["Mapa de calles (OpenStreetMap)","Mapa oscuro (CartoDB Dark Matter)","Mapa claro (Stamen Toner Lite)","Imágenes satelitales (ESRI World Imagery)"],["Cobertura arbórea 2020","Cobertura arbórea 2021","Cobertura arbórea 2022","Cobertura de pastos 2020","Cobertura de pastos 2021","Cobertura de pastos 2022","Pérdida/ganancia árboles-pastos 2019-2020 V1","Pérdida/ganancia árboles-pastos 2019-2020 V2","Pérdida/ganancia árboles-pastos 2020-2021","Pérdida/ganancia árboles-pastos 2021-2022"],{"collapsed":false,"autoZIndex":true,"position":"topright"}]},{"method":"addScaleBar","args":[{"maxWidth":100,"metric":true,"imperial":false,"updateWhenIdle":true,"position":"bottomleft"}]},{"method":"addSearchOSM","args":[{"url":"","propertyLoc":"loc","propertyName":"title","moveToLocation":true,"zoom":17,"container":"","minLength":2,"initial":true,"casesensitive":false,"autoType":true,"delayType":400,"tooltipLimit":-1,"tipAutoSubmit":true,"firstTipSubmit":false,"autoResize":true,"collapsed":true,"autoCollapse":true,"autoCollapseTime":1200,"textErr":"Location Not Found","textCancel":"Cancel","textPlaceholder":"Search...","position":"topleft","hideMarkerOnCollapse":false}]},{"method":"addEasyButton","args":[{"icon":"ion-arrow-shrink","title":"Reset View","onClick":"function(btn, map){ map.setView(map._initialCenter, map._initialZoom); }","position":"topleft"}]},{"method":"hideGroup","args":["Cobertura arbórea 2020"]},{"method":"hideGroup","args":["Cobertura arbórea 2021"]},{"method":"hideGroup","args":["Cobertura de pastos 2020"]},{"method":"hideGroup","args":["Cobertura de pastos 2021"]},{"method":"hideGroup","args":["Pérdida/ganancia árboles-pastos 2019-2020 V1"]},{"method":"hideGroup","args":["Pérdida/ganancia árboles-pastos 2019-2020 V2"]},{"method":"hideGroup","args":["Pérdida/ganancia árboles-pastos 2020-2021"]}]},"evals":["calls.17.args.0.onClick"],"jsHooks":{"render":[{"code":"function(el, x, data) {\n  return (\n      function(el, x, data) {\n      // get the leaflet map\n      var map = this; //HTMLWidgets.find('#' + el.id);\n      // we need a new div element because we have to handle\n      // the mouseover output separately\n      // debugger;\n      function addElement () {\n      // generate new div Element\n      var newDiv = $(document.createElement('div'));\n      // append at end of leaflet htmlwidget container\n      $(el).append(newDiv);\n      //provide ID and style\n      newDiv.addClass('lnlt');\n      newDiv.css({\n      'position': 'relative',\n      'bottomleft':  '0px',\n      'background-color': 'rgba(255, 255, 255, 0.7)',\n      'box-shadow': '0 0 2px #bbb',\n      'background-clip': 'padding-box',\n      'margin': '0',\n      'padding-left': '5px',\n      'color': '#333',\n      'font': '9px/1.5 \"Helvetica Neue\", Arial, Helvetica, sans-serif',\n      'z-index': '700',\n      });\n      return newDiv;\n      }\n\n\n      // check for already existing lnlt class to not duplicate\n      var lnlt = $(el).find('.lnlt');\n\n      if(!lnlt.length) {\n      lnlt = addElement();\n\n      // grab the special div we generated in the beginning\n      // and put the mousmove output there\n\n      map.on('mousemove', function (e) {\n      if (e.originalEvent.ctrlKey) {\n      if (document.querySelector('.lnlt') === null) lnlt = addElement();\n      lnlt.text(\n                           ' lon: ' + (e.latlng.lng).toFixed(5) +\n                           ' | lat: ' + (e.latlng.lat).toFixed(5) +\n                           ' | zoom: ' + map.getZoom() +\n                           ' | x: ' + L.CRS.EPSG3857.project(e.latlng).x.toFixed(0) +\n                           ' | y: ' + L.CRS.EPSG3857.project(e.latlng).y.toFixed(0) +\n                           ' | epsg: 3857 ' +\n                           ' | proj4: +proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs ');\n      } else {\n      if (document.querySelector('.lnlt') === null) lnlt = addElement();\n      lnlt.text(\n                      ' lon: ' + (e.latlng.lng).toFixed(5) +\n                      ' | lat: ' + (e.latlng.lat).toFixed(5) +\n                      ' | zoom: ' + map.getZoom() + ' ');\n      }\n      });\n\n      // remove the lnlt div when mouse leaves map\n      map.on('mouseout', function (e) {\n      var strip = document.querySelector('.lnlt');\n      if( strip !==null) strip.remove();\n      });\n\n      };\n\n      //$(el).keypress(67, function(e) {\n      map.on('preclick', function(e) {\n      if (e.originalEvent.ctrlKey) {\n      if (document.querySelector('.lnlt') === null) lnlt = addElement();\n      lnlt.text(\n                      ' lon: ' + (e.latlng.lng).toFixed(5) +\n                      ' | lat: ' + (e.latlng.lat).toFixed(5) +\n                      ' | zoom: ' + map.getZoom() + ' ');\n      var txt = document.querySelector('.lnlt').textContent;\n      console.log(txt);\n      //txt.innerText.focus();\n      //txt.select();\n      setClipboardText('\"' + txt + '\"');\n      }\n      });\n\n      }\n      ).call(this.getMap(), el, x, data);\n}","data":null},{"code":"function(el, x, data) {\n  return (function(el, x){ var map = this; map._initialCenter = map.getCenter(); map._initialZoom = map.getZoom();}).call(this.getMap(), el, x, data);\n}","data":null}]}}</script>
+</div>
+</div>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
